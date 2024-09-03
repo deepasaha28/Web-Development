@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+    <style>
+        *{
+          margin: 0;
+          padding: 0;
+        }
+        .box{
+            border:2px solid black;
+            height:133px;
+            width:80vw;
+            padding:3px;
+            margin:3px;
+        }
+        .box1{
+            background-color: rgb(95, 219, 219);
+            position:absolute;
+            top:0px;/* moves 0px top of html i.e, to nearest position ancestor*/
+            left:13px;
+        }
+        .box2{
+            background-color: rgb(106, 146, 221);
+            position:relative;
+            top:34px;
+            left:56px;
+        }
+        .box3{
+            background-color: rgb(176, 97, 201);
+            position:fixed;/*useful for advertisements on webpages*/
+            bottom:0px;
+            left:25vw;
+        }
+        .box4{
+            background-color: rgb(219, 95, 213);
+            position:sticky;
+            top:0px;
+            height:111px;
+            width:100%;
+            margin:0;
+            padding:0;
+
+        }
+        .parent{
+            padding:43px;
+            margin:34px;
+            border:3px solid blue;
+            position:absolute;/*when parent is absolute then child absolutr moves according to this parent whose position has been made as absolute*/
+
+
+            /*EXCEPTION--transform,filter or perspective properties can also make an element appear as positioned*/
+            /*transform:translate(0);*//*changes with respect to the parent*/
+            /*filter:invert()*//*changes the colour*/
+            /*perspective:0em;*/
+        }
+    </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="box box1">I am Box1</div>
+    <div class="box box2">I am Box2</div>
+    <div class="box box3">I am Box3</div>
+    <div class="box box4">I am Box4</div>
+</div>
+</body>
+</html>

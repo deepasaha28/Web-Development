@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+    /*The specificity of  element selector is 1*/
+       h1{
+        color:aqua;
+       }
+
+
+        /*The specificity of this class selector is 10*/
+       .cpurple{
+             color:purple;
+       }
+       /*The specificity of this attribute selector is 10*/
+         [data-x=a]{
+               color:greenyellow;
+         }
+       /*The specificity of this attribute selector is 10*/
+         a.harryclass.rohan-class[href]:hover{
+            color:blueviolet;
+         }
+
+      /*The specificity of this complex(element+class=1+10)selector is 11*/
+       h1.yellow{
+            color:yellow;
+       }
+
+      /*The specificity of this class selector is 10*/
+               .cred{
+             color:red;
+       }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1 /*style="color:maroon" This is inline style having highest specificity of 1000*/ class= "yellow cred cpurple" data-x="a">CSS Specificity</h1>
+    </div>
+</body>
+</html> 

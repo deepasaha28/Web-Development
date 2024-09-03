@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            border: 2px solid black;
+            display:inline-block;
+            padding:45px;/*space inside box*/
+            margin:34px;/*space between boxes*/
+            width: 344px;/*To keep text at center inside the box,but when display is inline-block not for when display is inline*/
+            
+        }
+        .box1{
+            /*display:none;*/   /*no box displays and space of that box also doesn't gets displayed*/
+            visibility: hidden;/*no box displays but space of that box gets displayed*/ 
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        I am a Box
+    </div>
+    <div class="box">Also a nice box</div>
+    <span>I am a good</span> 
+    <span>boy</span>
+</body>
+</html>
+ 
+<!--https://developer.mozilla.org/en-US/docs/Web/CSS/display -->

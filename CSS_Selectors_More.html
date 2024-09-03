@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /*.box:first-child{
+            background-color: red;
+        }*/
+
+        .box:nth-child(even){
+            background-color:green;
+        }
+
+        .box:nth-child(2){
+            font-style: oblique;
+        }
+
+        /*.box::first-line{
+            color:yellow;
+        }*/
+
+        .box::first-letter{
+            color:peru;
+        }
+
+        .boxes *{
+            color:blue;
+            border:2px solid black;
+        }
+
+        p,a, .box, [data-color="primary"]{
+            margin-top:45px;
+            padding-block:45px;
+            
+        }
+
+        /*Elements can be dynamically inserted through the help of CSS=these elements are called pseudo elements*/
+        .boxes::before{
+            content:"Deepa will fulfill year 2024 with hardworks,achievements";
+            color:blue;
+        }
+        .boxes::after{
+            content:"God Please be with me,Give me strength";
+            color:red;
+        }
+
+        ::selection{
+            background-color: black;
+            color: aquamarine;
+        }
+
+        input::placeholder{
+              color:blue;
+              font-size:15px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+
+        <input type="text" placeholder="Type your name here">
+    </div>
+</body>
+</html>

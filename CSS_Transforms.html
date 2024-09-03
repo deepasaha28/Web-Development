@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transforms</title>
+    <style>
+        /**{
+                margin: 0;
+                padding: 0;
+            }*/
+        .box{
+            height:50px;
+            width:50px;
+            background-color:beige;
+            border:2px solid black;
+            transform:rotate(55deg);
+            /*transform:rotate(0.125turn);*/
+            /*transform:rotateY(9deg);*/
+            /*transform:scaleX(1.5); to enlarge the size of box about some axis*/
+            /*transform:scale3d(); for a 3d transformation*/
+            /*transform:skewY(5deg); skew is to stretch th box also note that skew cannot be done in z axis */
+            /*transform:translateY(34%); to shift by some percent i.e translate according to axis*/
+
+            /*Multiple transforms together
+            transform:translateY(-100%) skew(40deg) translateX(-45%);*/
+
+            transform-origin:32% -0%;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            
+        }
+        /*box is inside container*/
+        .container{
+            width:100vw;
+            height:80vh;
+            border:2px solid purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+</html>

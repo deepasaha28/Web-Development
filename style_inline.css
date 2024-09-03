@@ -1,0 +1,16 @@
+p{
+    background-color: rgb(161, 133, 187)
+}
+a{
+    background-color: rgb(157, 207, 55)
+}
+div{
+    background-color: aliceblue
+}
+span{
+    background-color: rgb(144, 144, 218);
+}
+
+canvas {
+    border: 8px solid black;
+}

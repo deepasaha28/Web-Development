@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Website Builder</title>
+    <style>
+        .card{
+            display:flex;
+            border: 2px solid black;
+            width:700px;
+            height:100px;
+            border-radius: 4px;
+            padding:4px;
+            margin:5px;
+        }
+        .image img{
+            height:100px;
+            width:200px;
+            border-radius:4px;
+        }
+        .text h1, p{
+            padding:0.5px 0;
+        }
+        .image{
+            position:relative;
+        }
+        .capsule{
+          position: absolute;
+          bottom: 4px;
+          right: 5px;
+          z-index: 10;
+          background: black;      
+          color: white;
+          opacity: 0.9; 
+          padding: 1px;
+          border-radius: 4px;
+          font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="card">
+            <div class="image">
+                <img src = "GIG 1.png" alt ="">
+                <div class="capsule">31.22</div>
+            </div>
+            <div class="text">
+                <h1>Insights for a Web Developer Hunt</h1>
+                <p>Developer Deepa . 727K views . 2 months ago</p>
+
+            </div>
+      </div>
+    </div>
+    <script src = Assignment13_WebsiteBuilder.js></script>
+</body>
+</html>

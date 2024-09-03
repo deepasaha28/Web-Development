@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="SpotifyStyle.css">
+    <link rel="stylesheet" href="SpotifyUtility.css">
+</head>
+
+<body>
+    <script src=Spotify.js></script>
+
+    <div class="container flex bg-black">
+        <div class="left ">
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo"><img class="invert" src="SpotifyAssets/logo.svg" alt="logo"></div>
+                <ul>
+                    <li><img class="invert" src="SpotifyAssets/home.svg" alt="home">Home</li>
+                    <li><img class="invert" src="SpotifyAssets/search.svg" alt="search">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert" src="SpotifyAssets/playlist.svg" alt="">
+                    <h2>
+                        Your Library
+                    </h2>
+                </div>
+                <div class="songList">
+                    <ul>
+                        <li>
+                            <img class="invert"  src="SpotifyAssets/music.svg">
+                            <div class="info">
+                                <div>Song</div>
+                                <div>Artist</div>
+                            </div>
+                            <div class="playnow">
+                                <span>Play Now</span>
+                                <img class="invert" src="SpotifyAssets/play.svg">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety & Privacy
+                                Center</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="right bg-grey rounded">
+            <div class="header">
+                <div class="nav">
+                    <svg class="invert" width="15" xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" role="img"
+                        aria-hidden="true" class="Svg-sc-ytk21e-0 cAMMLk IYDlXmBmmUKHveMzIPCF" viewBox="0 0 16 16">
+                        <path
+                            d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0z">
+                        </path>
+                    </svg>
+
+                    <svg class="invert" width="15" xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" role="img"
+                        aria-hidden="true" class="Svg-sc-ytk21e-0 cAMMLk IYDlXmBmmUKHveMzIPCF" viewBox="0 0 16 16">
+                        <path
+                            d="M4.97.47a.75.75 0 0 0 0 1.06L11.44 8l-6.47 6.47a.75.75 0 1 0 1.06 1.06L13.56 8 6.03.47a.75.75 0 0 0-1.06 0z">
+                        </path>
+                    </svg>
+
+                </div>
+                <div class="buttons">
+                    <button class="signupbtn">Signup</button>
+                    <button class="loginbtn">Log in</button>
+                </div>
+            </div>
+            <div class="spotifyPlaylists">
+                <h1>Spotify Playlist</h1>
+                <div class="cardContainer">
+                    <div class="card">
+                        <div class="play"><img src="SpotifyAssets/play-button.png"></div>
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67706f00000002bf95459f4719cb4f70393377"
+                            data-testid="card-image" alt=""
+                            class="mMx2LUixlnN_Fu45JpFB yMQTWVwLJ5bV8VGiaqU3 yOKoknIYYzAE90pe7_SE Yn2Ei5QZn19gria6LjZj">
+                        <h2>Kitchen Swagger</h2>
+                        <p>Gettin' figgy with it, bana-na-na-nana</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="play"><img src="SpotifyAssets/play-button.png"></div>
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67706f00000002bf95459f4719cb4f70393377"
+                            data-testid="card-image" alt=""
+                            class="mMx2LUixlnN_Fu45JpFB yMQTWVwLJ5bV8VGiaqU3 yOKoknIYYzAE90pe7_SE Yn2Ei5QZn19gria6LjZj">
+                        <h2>Kitchen Swagger</h2>
+                        <p>Gettin' figgy with it, bana-na-na-nana</p>
+                    </div>
+
+                    
+                <div class="playbar">
+                    <div class="songinfo">
+
+                    </div>
+                    <div class="songbuttons">
+                        <img src="SpotifyAssets/previous.svg">
+                        <img src="SpotifyAssets/play.svg">
+                        <img src="SpotifyAssets/next.svg">
+                    </div>
+                    <div class="songtime">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

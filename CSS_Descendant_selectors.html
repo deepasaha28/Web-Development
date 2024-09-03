@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Descendant Selectors + Universal Selector + Pseudo Selector</title>
+    <style>
+        div p{
+        color: red;
+        background-color: greenyellow;
+    }
+  /*Universal Selector*/
+    *{
+        margin:0;
+        padding:0;
+    }
+    /*Pseudo Selector*/
+    a:visited{
+        color: purple;
+    }
+
+    a:link{
+        color: blue;
+    }
+
+    a:active{
+        background-color: yellowgreen;
+    }
+
+    a:hover{
+        background-color: red;
+    }
+    
+    p:first-child{
+        background-color: aqua;
+    }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="one">
+        I am one.
+    </div>
+    <main class="one">
+        <p>I am First</p>
+        <p>I am Second</p>
+    </main>
+    <div>
+        <div>
+            I am div.
+            <p>I am a para inside div.</p>
+        </div>
+        <article>
+           <p>I am a para inside article.</p> 
+        </article>
+    </div>
+    <a target="_blank" href="https://www.google.com">Open Google</a>
+    <a target="_blank" href="https://www.youtube.com">Open Youtube</a>
+    
+</body>
+</html>
